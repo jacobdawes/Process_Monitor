@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 sub, temp, time
 emc, 95, 10
 su8, 95, 10
 si, 95, 10
+=======
+substrate, temp, time,
+emc, 95, 10,
+si, 95, 10,
+su8, 95, 10,
+>>>>>>> 5e8758bfc701611072da34b25c1c0ce29ae4562c

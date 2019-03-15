@@ -54,7 +54,11 @@ H_BAKE_TIME=0
 
 # Spin parameters
 SPIN_SPEED=0
+<<<<<<< HEAD
 SPIN_TIME=30
+=======
+SPIN_TIME=0
+>>>>>>> 5e8758bfc701611072da34b25c1c0ce29ae4562c
 SPIN_ACCEL=0
 
 # Exposure Parameters
@@ -68,6 +72,7 @@ DEV_TIME=0
 
 # READ VALUES FROM DATA FILES
 d_bake_params="./data/su8_2000/dehydration_bake.csv"
+<<<<<<< HEAD
 spin_params="./data/su8_2000/spin.csv"
 s_bake_params="/data/su8_2000/soft_bake.csv"
 exposure_params="/data/su8_2000/exposure.csv"
@@ -105,16 +110,26 @@ then
         SPIN_ACCEL=$(awk -v thickness=$MAT_THICK 'BEGIN { FS = ","} ; {if(NR==thickness) print $4}' <"$spin_params")
     fi
 fi
+=======
+spin_params="./data/su8_2000/spin_speed.csv"
+
+
+>>>>>>> 5e8758bfc701611072da34b25c1c0ce29ae4562c
 
 
 # WRITE ALL TO EXPERIMENT FILE
 {
     echo "Experiment $xp_num"
+<<<<<<< HEAD
     echo "Date: $TODAY"
+=======
+    echo "date: $TODAY"
+>>>>>>> 5e8758bfc701611072da34b25c1c0ce29ae4562c
     echo ""
     echo "Deposit/pattern $MAT_THICK um SU8 on $MAT_SUBST substrate for $NUM_WAFER wafers."
     echo ""
     echo ""
+<<<<<<< HEAD
     echo "O2 plasma ash for 2 minutes"
     echo ""
     echo "Dehydration bake: $D_BAKE_TIME minutes at $D_BAKE_TEMP C"
@@ -132,6 +147,16 @@ fi
     echo "Hard bake (optional): $H_BAKE_TIME minutes at $H_BAKE_TEMP C"
     echo ""
     echo ""
+=======
+    echo "Dehydration bake: $D_BAKE_TIME minutes at $D_BAKE_TEMP C"
+    echo "Spin: $SU8_TYPE for $SPIN_TIME at $SPIN_SPEED rpm with acceleration of $SPIN_ACCEL"
+    echo "Soft bake: $S_BAKE_TIME minutes at $S_BAKE_TEMP C"
+    echo "Exposure: $EXP_E mJ (currently $EXP_T s)"
+    echo "Post exposure bake: $PE_BAKE_TIME minutes at $_PE_BAKE_TEMP C"
+    echo "Develop: $DEV_TIME minutes in SU8 developer"
+    echo "Hard bake (optional): $H_BAKE_TIME minutes at $H_BAKE_TEMP C"
+    echo ""
+>>>>>>> 5e8758bfc701611072da34b25c1c0ce29ae4562c
     echo "Please provide results for this experiment in the data directory."
     echo ""
 }>$test_path_name
