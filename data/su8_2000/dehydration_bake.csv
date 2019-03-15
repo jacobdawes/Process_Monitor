@@ -1,0 +1,4 @@
+sub, temp, time
+emc, 95, 10
+su8, 95, 10
+si, 95, 10
