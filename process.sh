@@ -36,3 +36,4 @@ echo "See ./experiments for process description"
 # -------- call script depending on layer material
 ./processes/su8_2000.sh $NUM_WAFERS $MATERIAL_SUBSTRATE $LAYER_THICKNESS
 
+

@@ -1,0 +1,26 @@
+Process: ./experiments/SU8_2UM_EMC_
+Experiment#: 1
+Date: 03/17/19
+
+Deposit/pattern 2 um SU8 on EMC substrate for 5 wafers.
+
+
+  O2 plasma ash for 2 minutes
+
+  Dehydration bake:  10 minutes at  95 C
+
+  Spin: SU8_2002 for 30 seconds at 3000 rpm with acceleration of 300 rpm/s
+
+  Soft bake:  3 minutes at  90 C
+
+  Exposure:  65 mJ (currently  20 s)
+
+  Post exposure bake:  3 minutes at  C
+
+  Develop: 2 minutes in SU8 developer
+
+  Hard bake (optional): 30 minutes at 165 C
+
+
+Please provide results for this experiment in the data directory.
+
