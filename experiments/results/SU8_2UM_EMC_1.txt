@@ -22,3 +22,23 @@ Deposit/pattern 2 um SU8 on EMC substrate for 3 wafers.
   Hard bake (optional): 30 minutes at 165 C
 
 
+
+
+RESULTS
+
+Wafer 1
+Major Delamination: y
+Delamination Length: 5
+
+Wafer 2
+Major Delamination: n
+Delamination Length: 19
+
+Wafer 3
+Major Delamination: y
+Delamination Length: 13
+
+
+SUMMARY
+Major delamination occured on 66 % of the wafers
+Average delamination length was 13 um

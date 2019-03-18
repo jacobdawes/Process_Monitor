@@ -47,7 +47,7 @@ do
     then
         ((MAJOR_DELAM_COUNT++))
     fi
-    ((DELAM_LEN_SUM++))
+    DELAM_LEN_SUM=$((DELAM_LEN_SUM+DELAM_LEN))
 
     # Append results to file
     {
@@ -60,8 +60,8 @@ done
 
 
 # Calculate averages
-MAJOR_DELAM_AVG=$((MAJOR_DELAM_COUNT / NUM_WAFERS))
-DELAM_LEN_AVG=$((DELAM_LEN_SUM / NUM_WAFERS))
+MAJOR_DELAM_AVG=$((100*MAJOR_DELAM_COUNT / NUM_WAFERS))
+DELAM_LEN_AVG=$(((DELAM_LEN_SUM + NUM_WAFERS-1) / NUM_WAFERS))
 
 # Write summary of data to file
 {

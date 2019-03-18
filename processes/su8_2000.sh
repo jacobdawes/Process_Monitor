@@ -155,8 +155,6 @@ fi
     echo "  Hard bake (optional): $H_BAKE_TIME minutes at $H_BAKE_TEMP C"
     echo ""
     echo ""
-    echo "Please provide results for this experiment in the data directory."
-    echo ""
 }>$test_path_name
 
 
